@@ -1,0 +1,12 @@
+{
+  "name": "jq.paginator",
+  "version": "0.1.1",
+  "homepage": "https://github.com/dani-admedo/jq.paginator",
+  "authors": [""],
+  "description": "",
+  "main": [
+  	"./js/jq.paginator.js",
+  	"./css/jq.paginator.css"
+  ],
+  "license": "MIT"
+}

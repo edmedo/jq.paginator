@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Paginator Demo</title>
+    <link rel="stylesheet" href="css/demo.css" />
+    <link rel="stylesheet" href="css/jq.paginator.css" />
+  </head>
+  <body>
+  	<div class="container">	
+		<div class="main">
+			<div id="preview" class="preview">
+				<span>1</span>
+			</div>
+			<div id="slider" class="sp-slider-wrapper">
+				<nav>
+					<a href="#" class="sp-prev">Previous</a>
+					<a href="#" class="sp-next">Next</a>
+				</nav>
+			</div>
+		</div>
+	</div><!-- /container -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="js/jq.paginator.js"></script>
+    <script>
+    //
+	$(function() {
+
+		var $update = $( '#preview > span' );
+
+		$( "#slider" ).pagination( {
+			total : 100,
+			tgt: ".ui-slider-handle",
+			onChange : function( value ) {
+				$update.text( value );
+			}
+		} );
+
+	});
+    </script>
+  </body>
+</html>
