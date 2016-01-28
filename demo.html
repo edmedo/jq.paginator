@@ -3,16 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Paginator Demo</title>
-    <link rel="stylesheet" href="css/demo.css" />
     <link rel="stylesheet" href="css/jq.paginator.css" />
   </head>
   <body>
-  	<div class="container">	
-		<div class="main">
-			<div id="preview" class="preview">
+  	<div class="jq-paginator-container">	
+		<div class="jq-paginator-main">
+			<div class="jq-paginator-preview">
 				<span>1</span>
 			</div>
-			<div id="slider" class="sp-slider-wrapper">
+			<div id="jq-paginator-slider" class="sp-slider-wrapper">
 				<nav>
 					<a href="#" class="sp-prev">Previous</a>
 					<a href="#" class="sp-next">Next</a>
@@ -26,9 +25,9 @@
     //
 	$(function() {
 
-		var $update = $( '#preview > span' );
+		var $update = $( '.jq-paginator-preview > span' );
 
-		$( "#slider" ).pagination( {
+		$( "#jq-paginator-slider" ).pagination( {
 			total : 100,
 			tgt: ".ui-slider-handle",
 			onChange : function( value ) {

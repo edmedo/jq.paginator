@@ -700,46 +700,27 @@
 /* General Demo Style */
 
 
-.jq-paginator .container {
+.jq-paginator-container {
 	width: 100%;
 	position: relative;
 }
 
-.jq-paginator .main,
-.jq-paginator .container > header {
+.jq-paginator-main,
+.jq-paginator-container > header {
 	margin: 0 auto;
 	position: relative;
 }
 
-.jq-paginator .main {
+.jq-paginator-main {
 	width: 40%;
 	min-width: 320px;
 }
 
-.jq-paginator .container > header {
-	padding: 30px;
-	width: 90%;
-	max-width: 960px;
-}
-
-.jq-paginator .container > header h1 {
-	font-size: 2em;
-	margin: 0;
-	font-weight: 700;
-	color: #fff;
-	text-align: center;
-	text-shadow: 0 1px 1px rgba(0,0,0,0.2);
-}
-
-.jq-paginator .container > header h1 span {
-	display: block;
-	font-size: 60%;
-	font-weight: 300;
-}
 
 
 
-.jq-paginator .preview {
+
+.jq-paginator-preview {
 	background: rgba(161,207,246,0.2);
 	border-radius: 10px;
 	margin: 30px;
@@ -748,7 +729,7 @@
 	box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
 }
 
-.jq-paginator .preview span {
+.jq-paginator-preview span {
 	color: #9cc5e8;
 	font-size: 200px;
 	line-height: 300px;
