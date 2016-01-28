@@ -700,18 +700,18 @@
 /* General Demo Style */
 
 
-.jq-paginator-container {
+.jqui-carousel-container {
 	width: 100%;
 	position: relative;
 }
 
-.jq-paginator-main,
-.jq-paginator-container > header {
+.jqui-carousel-main,
+.jqui-carousel-container > header {
 	margin: 0 auto;
 	position: relative;
 }
 
-.jq-paginator-main {
+.jqui-carousel-main {
 	width: 40%;
 	min-width: 320px;
 }
@@ -720,7 +720,7 @@
 
 
 
-.jq-paginator-preview {
+.jqui-carousel-preview {
 	background: rgba(161,207,246,0.2);
 	border-radius: 10px;
 	margin: 30px;
@@ -729,7 +729,7 @@
 	box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
 }
 
-.jq-paginator-preview span {
+.jqui-carousel-preview span {
 	color: #9cc5e8;
 	font-size: 200px;
 	line-height: 300px;
