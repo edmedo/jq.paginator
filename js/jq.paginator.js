@@ -128,9 +128,16 @@
 		_initEvents : function() {
 			var self = this;
 			var tgt = this.options.tgt;
+			var $tgt;
+
+			if (typeof(tgt) === 'string') {
+				$tgt = $(tgt);
+			} else {
+				$tgt = tgt;
+			}
 			
 			//this.slider.getHandle().on( 'click', function() {
-			$(tgt).on( 'click', function() {
+			$tgt.on( 'click', function() {
 				//alert("yoooooo")
 				if( self.isSliderOpened ) {
 					return false;
