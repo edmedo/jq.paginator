@@ -7,6 +7,7 @@
 
 /* Layout helpers
 ----------------------------------*/
+
 .ui-helper-hidden {
 	display: none;
 }
@@ -583,7 +584,7 @@
 }
 
 .sp-slider-wrapper nav a:after {
-	font-family: 'arrowicons';
+	font-family: 'Glyphicons Halflings';
 	font-style: normal;
 	font-weight: normal;
 	speak: none;
@@ -601,11 +602,11 @@
 }
 
 .sp-slider-wrapper nav a.sp-prev:after {
-	content: '\e75d';
+	content: '\e079';
 }
 
 .sp-slider-wrapper nav a.sp-next:after {
-	content: '\e75e';
+	content: '\e080';
 }
 
 .sp-slider {
