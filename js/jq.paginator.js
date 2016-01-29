@@ -136,6 +136,7 @@
 				$tgt = tgt;
 			}
 			
+			$tgt.append('<span class="val-monitor"></span>');
 			//this.slider.getHandle().on( 'click', function() {
 			$tgt.on( 'click', function() {
 				//alert("yoooooo")
