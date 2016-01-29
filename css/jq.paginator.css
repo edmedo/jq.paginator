@@ -746,3 +746,7 @@
     font-weight: 700;
     padding: 4px;
 }
+
+.jqui-paginator-main .ui-slider-handle .val-monitor{
+	color: #BDE130;
+}
