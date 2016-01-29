@@ -6,12 +6,12 @@
     <link rel="stylesheet" href="css/jq.paginator.css" />
   </head>
   <body>
-  	<div class="jqui-carousel-container">	
-		<div class="jqui-carousel-main">
-			<div class="jqui-carousel-preview">
+  	<div class="jqui-paginator-container">	
+		<div class="jqui-paginator-main">
+			<div class="jqui-paginator-preview">
 				<span>1</span>
 			</div>
-			<div id="jqui-carousel-slider" class="sp-slider-wrapper">
+			<div id="jqui-paginator-slider" class="sp-slider-wrapper">
 				<nav>
 					<a href="#" class="sp-prev">Previous</a>
 					<a href="#" class="sp-next">Next</a>
@@ -25,9 +25,9 @@
     //
 	$(function() {
 
-		var $update = $( '.jqui-carousel-preview > span' );
+		var $update = $( '.jqui-paginator-preview > span' );
 
-		$( "#jqui-carousel-slider" ).pagination( {
+		$( "#jqui-paginator-slider" ).pagination( {
 			total : 100,
 			tgt: ".ui-slider-handle",
 			onChange : function( value ) {
