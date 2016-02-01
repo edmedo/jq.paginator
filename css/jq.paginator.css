@@ -701,17 +701,17 @@
 /* General Demo Style */
 
 
-.jqui-paginator-container {
+.custom-paginator-container {
 	margin-top: 16px;
 }
 
-.jqui-paginator-main,
-.jqui-paginator-container > header {
+.custom-paginator-main,
+.custom-paginator-container > header {
 	margin: 0 auto;
 	position: relative;
 }
 
-.jqui-paginator-main {
+.custom-paginator-main {
 	width: auto;
 }
 
@@ -719,7 +719,7 @@
 
 
 
-.jqui-paginator-preview {
+.custom-paginator-preview {
 	/*
 	background: rgba(161,207,246,0.2);
 	border-radius: 10px;
@@ -731,7 +731,7 @@
 	font-size: 22px;
 }
 
-.jqui-paginator-preview span {
+.custom-paginator-preview span {
 	/*
 	color: #9cc5e8;
 	font-size: 200px;
@@ -747,9 +747,9 @@
     padding: 4px;
 }
 
-.jqui-paginator-main .ui-slider-handle .val-monitor{
+.custom-paginator-main .ui-slider-handle .val-monitor{
 	color: #BDE130;
 }
-.jqui-paginator-container nav a[disabled="disabled"]::after {
+.custom-paginator-container nav a[disabled="disabled"]::after {
 	color: #f1f1f1;
 }
