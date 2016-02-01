@@ -750,6 +750,10 @@
 .custom-paginator-main .ui-slider-handle .val-monitor{
 	color: #BDE130;
 }
+.custom-paginator-container nav a[disabled="disabled"] {
+	cursor: default;
+    pointer-events: none;
+}
 .custom-paginator-container nav a[disabled="disabled"]::after {
 	color: #f1f1f1;
 }
