@@ -750,3 +750,6 @@
 .jqui-paginator-main .ui-slider-handle .val-monitor{
 	color: #BDE130;
 }
+.jqui-paginator-container nav a[disabled="disabled"]::after {
+	color: #f1f1f1;
+}
