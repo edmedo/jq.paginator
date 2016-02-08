@@ -11,7 +11,7 @@
  *
  * Licensed under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
- * 
+ *
  * Copyright 2012, Codrops
  * http://www.codrops.com
  */
@@ -28,7 +28,7 @@
 	};
 	$.Slider.prototype = {
 		_create : function() {
-			
+
 			var self = this;
 			this.slider = this.$el.slider( {
 				value : this.value,
@@ -105,7 +105,7 @@
 
 			//this.transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ];
 			this.transEndEventName = 'transitionend';
-			
+
 			//$.fn.applyStyle = Modernizr.csstransitions ? $.fn.css : $.fn.animate;
 			$.fn.applyStyle = $.fn.css;
 
@@ -123,7 +123,7 @@
 			this.slider = new $.Slider( { value : this.options.value, total : this.options.total, width : this.options.width }, $slider );
 			// control if the slider is opened/closed
 			this.isSliderOpened = false;
-			
+
 		},
 		_initEvents : function() {
 			var self = this;
@@ -135,7 +135,7 @@
 			} else {
 				$tgt = tgt;
 			}
-			
+
 			$tgt.append('<span class="val-monitor">' + this.options.value + '</span>');
 			//this.slider.getHandle().on( 'click', function() {
 			$tgt.on( 'click', function() {
@@ -152,10 +152,10 @@
 				return false;
 
 			} );
-			
+
 			this.slider.getSlider().on( {
 				'slidestop' : function( event, ui ) {
-				
+
 					if( !self.isSliderOpened ) {
 						return false;
 					}
@@ -169,7 +169,7 @@
 
 					};
 					self.$el.stop().applyStyle( { width : 0 }, $.extend( true, [], { duration : '150ms', complete : animcomplete } ) ).on( self.transEndEventName, function() {
-					
+
 						$( this ).off( self.transEndEventName );
 						animcomplete.call();
 
@@ -179,7 +179,7 @@
 
 				},
 				'slide' : function( event, ui ) {
-				
+
 					if( !self.isSliderOpened ) {
 						return false;
 					}
@@ -198,7 +198,7 @@
 
 			} );
 			this.$navPrev.on( 'click', function() {
-				
+
 				self.slider.previous( function( value ) {
 					self.options.onChange( value );
 				} );
@@ -208,11 +208,15 @@
 
 		},
 		toggleNavigation : function( toggle ) {
-			
+
 			$.fn.render = toggle ? $.fn.show : $.fn.hide;
 			this.$navNext.render();
 			this.$navPrev.render();
 
+		},
+		reset: function () {
+
+			this.slider.atStart();
 		}
 
 	}
