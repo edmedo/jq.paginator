@@ -1,10 +1,10 @@
 {
   "name": "jq.paginator",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/edmedo/jq.paginator",
   "main": [
-  	"./js/jq.paginator.js",
-  	"./css/jq.paginator.css"
+    "./js/jq.paginator.js",
+    "./css/jq.paginator.css"
   ],
   "license": "MIT"
 }
